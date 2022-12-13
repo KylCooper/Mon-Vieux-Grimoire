@@ -47,12 +47,12 @@ nav{
 .barre{
    width: 6px;
    height: 25px; 
-   border: 1px solid #2C1810;
+   border: 1.5px solid #2C1810;
 }
 .barre-2{
     width: 6px;
     height: 25px; 
-    border: 1px solid #2C1810;
+    border: 1.5px solid #2C1810;
     transform: rotate(-15deg);
     margin-left: 3px;
 }
@@ -224,6 +224,15 @@ footer{
         width: 80%;
     }
 }
+
+@media screen and (max-width:1350px){
+    .btn-back{ 
+        width: 100% ;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
 @media screen and (max-width:1020px){
     footer{
         height: 350px;
@@ -241,5 +250,25 @@ footer{
     }
     .fonter-h4{
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .menu-bloc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 15%;
+        height: 80%;
+        margin-right: 20px;
+        
+    }
+}
+@media screen and (max-width:755px){
+    .menu{
+        font-weight: 400;
+        font-size: 10px;
+        cursor: pointer;
+        
     }
 }
